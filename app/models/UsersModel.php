@@ -329,7 +329,7 @@ class UsersModel
 
             // Group membership
             $groups = $data['groups'] ?? [];
-            $domainUsersDn = 'CN=Domain Users,CN=Users,DC=adtest,DC=local';
+            $domainUsersDn = 'CN=Domain Users,CN=Users,DC=dc1,DC=local';
             if (!in_array($domainUsersDn, $groups)) {
                 $groups[] = $domainUsersDn;
             }
